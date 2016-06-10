@@ -8,6 +8,6 @@ export default React.createClass({
             <div className="winner">
                 Winner is {this.props.winner}!
             </div>
-        )
+        );
     }
 });

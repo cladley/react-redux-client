@@ -12,6 +12,12 @@ export default React.createClass({
     hasVotedFor: function(entry) {
         return this.props.hasVoted === entry;
     },
+    getTally: function(entry) {
+        if(this.props.tally && this.props.tally.has(entry)){
+            return this.props.tally.get(entry);
+        }       
+        return 0;
+    },
     render: function(){
         return (
             <div className="voting">
